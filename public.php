@@ -8,7 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <style>
         <?php include 'css/styles.css' ?> 
-        <?php include 'css/home.css' ?> 
+        <?php include 'css/grid.css' ?> 
 
     </style>  
     
@@ -39,17 +39,17 @@
      </tr>
 
      <tr>
-        <td>Cheeseburger</td>
-        <td>$8.99</td>
+        <td>Chicken Sandwhich</td>
+        <td>$11.99</td>
         <td>American</td>
-        <td>Beef & Cheese Burger</td>
+        <td>Fried Chicken Sandwhich w/ Cheese</td>
      </tr>
 
      <tr>
-        <td>Cheeseburger</td>
-        <td>$8.99</td>
-        <td>American</td>
-        <td>Beef & Cheese Burger</td>
+        <td>Pasta Salad</td>
+        <td>$9.99</td>
+        <td>Italian</td>
+        <td>Pasta Salad with tomatoes & salami</td>
      </tr>
 
   </table>
@@ -57,9 +57,9 @@
   <h2>Food Gallery</h2>
   <div class="food-gallery">
     <img src="img/enchiladas.jpg" alt="image of enchiladas on a plate">
-    <img src="img/enchiladas.jpg" alt="image of enchiladas on a plate">
-    <img src="img/enchiladas.jpg" alt="image of enchiladas on a plate">
-    <img src="img/enchiladas.jpg" alt="image of enchiladas on a plate">
+    <img src="img/cheeseburger.jpg" alt="image of a cheesrburger and fries on a plate">
+    <img src="img/chicken-sandwhich.jpg" alt="close up image of a chicken sandwhich">
+    <img src="img/pasta-salad.jpg" alt="bowl of pasta salad">
 
   </div>
     

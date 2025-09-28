@@ -10,7 +10,7 @@
 
     <style>
         <?php include 'css/styles.css' ?> 
-        <?php include 'css/home.css' ?> 
+        <?php include 'css/grid.css' ?> 
     </style>  
     
 </head>
