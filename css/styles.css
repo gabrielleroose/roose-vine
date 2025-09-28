@@ -4,12 +4,22 @@
     margin-bottom: 30px;
 }
 
-.food-gallery {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
+th td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
 }
 
-img{
-    width: 100%;
+th { 
+    background: #444;
+    color: white;
 }
+
+h1, h2, h3, h4, h5, h6{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: blanchedalmond;
+}
+
