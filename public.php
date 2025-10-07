@@ -15,6 +15,20 @@
 </head>
 <body>
 <?php include 'includes/navbar.php'; ?>
+<?php
+// Connect to database
+$servername = "db.luddy.indiana.edu";
+$username = "i494f25_groose"; 
+$password = "prose3351skite";
+$dbname = "i494f25_groose";   
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+?>
 
 <table class="dish-table">
      <tr>
