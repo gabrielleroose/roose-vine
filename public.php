@@ -50,7 +50,7 @@ error_reporting(E_ALL);
         <tbody>
             <?php
             if ($results->num_rows > 0) {
-                while ($row = $result->fetch_assoc()) {
+                while ($row = $results->fetch_assoc()) {
                     echo "<tr>";
                     echo "<td>" . htmlspecialchars($row['name']) . "</td>";
                     echo "<td>" . htmlspecialchars($row['price']) . "</td>";
