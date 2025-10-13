@@ -36,7 +36,6 @@ error_reporting(E_ALL);
 
     ?>
 
-
     <table class="dish-table">
         <thead>
             <tr>
