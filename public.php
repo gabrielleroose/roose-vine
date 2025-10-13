@@ -28,16 +28,15 @@ $dbname = "i494f25_groose";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-if ($conn->connect_error) {
-    echo '<div class="alert alert-danger text-center" role="alert">
-            ❌ Connection failed: ' . $conn->connect_error . '
-          </div>';
-} else {
-    echo '<div class="alert alert-success text-center" role="alert">
-            ✅ Connection successful!
-          </div>';
-}
+$sql_table = "Select mi.item_name as name,mi.price,mi.description, mc.category_name As category, r.name as Restaurant from menu_item mi
+    JOIN menu_category mc ON mi.category_id = mc.category_id
+    JOIN restaurant r ON mi.restaurant_id = r.restaurant_id";
+    $result = $conn -> query($sql_table);
+
+    print_r($result);
+
 ?>
+
 
 <table class="dish-table">
      <tr>
