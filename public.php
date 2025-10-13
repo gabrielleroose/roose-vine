@@ -29,7 +29,7 @@ error_reporting(E_ALL);
 
     $conn = new mysqli($servername, $username, $password, $dbname);
 
-    $sql_table = "Select mi.item_name as name,mi.price,mi.description, mc.category_name As category, r.name as Restaurant from menu_item mi
+    $sql_table = "Select mi.item_name as name,mi.price,mi.description, mc.category_name as category, r.name as restaurant from menu_item mi
     JOIN menu_category mc ON mi.category_id = mc.category_id
     JOIN restaurant r ON mi.restaurant_id = r.restaurant_id";
     $results = $conn->query($sql_table);
