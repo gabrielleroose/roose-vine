@@ -44,6 +44,7 @@ error_reporting(E_ALL);
                 <th>Dish Price</th>
                 <th>Dish Category</th>
                 <th>Dish Description</th>
+                <th>Restaurant</th>
             </tr>
         </thead>
 
