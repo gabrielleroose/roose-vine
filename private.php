@@ -52,13 +52,13 @@
 
     <form action="" method="POST">
         <label for="dish_name">Dish Name:</label>
-        <input type="text" name="dish_name" id="dish_name" required>
+        <input type="text" name="dish_name" id="dish_name">
 
         <label for="price">Dish Price:</label>
-        <input type="number" name="price" id="price" required>
+        <input type="text" name="price" id="price">
 
         <label for="description">Dish Description:</label>
-        <input type="text" name="description" id="discription" required>
+        <input type="text" name="description" id="discription">
 
         <label>Dish Attributes:</label>
         <div class="checkbox-group">
