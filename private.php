@@ -27,10 +27,29 @@
     $conn = new mysqli($servername, $username, $password, $dbname);
     $attributes_query = "SELECT * FROM dish_attributes";
     $attributes_result = $conn->query($attributes_query);
+    $errors = [];
+    $success_message = "";
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $dish_name = trim($_POST["dish_name"]);
+        $price = trim($_POST["price"]);
+        $attributes = trim($_POST["attributes"]);
+        $description = trim($_POST["description"]);
+        if (empty($dish_name) || !preg_match("/^[a-zA-Z\s]+$/", $dish_name)){
+            $errors[] = "Dish name should only contain letters.";
+        }
+        if (empty($price) || !is_numeric($price) || $price <= 0){
+            $errors[] = "Please enter a valid dish price.";
+        }
+        if (empty($description)){
+            $errors[] = "Dish description should not be empty.";
+        }
+
+    }
     ?>
 
     <h2 class="form_heading">Add a New Dish</h2>
-    
+
     <form action="" method="POST">
         <label for="dish_name">Dish Name:</label>
         <input type="text" name="dish_name" id="dish_name" required>
@@ -51,9 +70,19 @@
 
         <button type="submit">Add Dish</button>
 
+        <?php if (!empty($errors)): ?>
+            <div class="error">
+                <ul>
+                    <?php foreach ($errors as $e): ?>
+                        <li><?= $e ?></li>
+                    <?php endforeach; ?>
+                </ul>
+            </div>
+        <?php elseif ($success_message): ?>
+            <div class="success"><?= $success_message ?></div>
+        <?php endif; ?>
+
     </form>
-
-
 
 </body>
 
