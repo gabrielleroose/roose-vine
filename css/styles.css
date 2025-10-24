@@ -33,3 +33,56 @@ body{
     background-color: blanchedalmond;
 }
 
+
+form {
+    background-color: #444;
+    color: #f5deb3; 
+    width: 450px;
+    margin: 0 auto;
+    padding: 25px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    background-color: #f8f8f8;
+}
+
+.checkbox-group {
+    margin-top: 10px;
+}
+
+.checkbox-group label {
+    font-weight: normal;
+}
+
+button[type="submit"] {
+    background-color: #f5deb3;
+    color: #444;
+    border: none;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-top: 20px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #e8cfa6;
+    transform: translateY(-2px);
+} 

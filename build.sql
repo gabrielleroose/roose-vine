@@ -42,6 +42,32 @@ CREATE TABLE menu_item(
     FOREIGN KEY (restaurant_id) REFERENCES restaurant(restaurant_id)
 );
 
+-- Creating dish attributes table
+CREATE TABLE dish_attributes(
+    attribute_id INT AUTO_INCREMENT PRIMARY KEY,
+    attribute_name VARCHAR(150) NOT NULL
+);
+
+-- Creating menu item attributes bridge table
+CREATE TABLE menu_item_attribute (
+    item_id INT,
+    attribute_id INT,
+    PRIMARY KEY (item_id, attribute_id),
+    FOREIGN KEY (item_id) REFERENCES menu_item(item_id),
+    FOREIGN KEY (attribute_id) REFERENCES dish_attributes(attribute_id)
+);
+
+
+
+-- Insert data into dish attributes
+INSERT INTO dish_attributes(attribute_name) VALUES
+("Spicy"),
+("Dairy Free"),
+("Vegan"),
+("Vegetarian"),
+("Gluten Free");
+
+
 
 -- Insert data into locations
 
