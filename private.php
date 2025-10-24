@@ -29,7 +29,8 @@
     $attributes_result = $conn->query($attributes_query);
     ?>
 
-    <h2>Add a New Dish</h2>
+    <h2 class="form_heading">Add a New Dish</h2>
+    
     <form action="" method="POST">
         <label for="dish_name">Dish Name:</label>
         <input type="text" name="dish_name" id="dish_name" required>
