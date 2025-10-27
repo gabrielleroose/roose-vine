@@ -45,6 +45,7 @@
             $errors[] = "Dish description should not be empty.";
         }
         $dish_name = htmlspecialchars(strip_tags($dish_name));
+        $description = str_replace(['"', "'"], '', $description);
         $description = htmlspecialchars(strip_tags($description));
         $price = floatval($price);
 
