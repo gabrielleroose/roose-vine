@@ -18,6 +18,10 @@
 <body>
 <?php include 'includes/navbar.php'; ?>
 
+<?php
+$error = '';
+?>
+
 
     <?php
     ini_set('display_errors', 1);
@@ -51,16 +55,15 @@
         if (empty($item_name) || $price === '') {
             $error = "Item name and price are required.";
         } else {
-            $price = floatval($price); // cast to float
+            $price = floatval($price); 
             if ($price <= 0) {
                 $error = "Please enter a valid positive number for price.";
             } else {
-                // Update the database
                 $update_stmt = $conn->prepare("UPDATE menu_item SET item_name = ?, price = ?, description = ? WHERE item_id = ?");
                 $update_stmt->bind_param("sdsi", $item_name, $price, $description, $item_id);
                 $update_stmt->execute();
         
-                header("Location: public.php?updated=1");
+                header("Location: public.php");
                 exit;
     }
 }
@@ -68,11 +71,17 @@
 
     ?>
 
-    
 
 
 <div class="container mt-4">
     <h2>Edit Menu Item</h2>
+
+    <?php
+if (!empty($error)) {
+    echo '<div class="alert alert-danger">' . htmlspecialchars($error) . '</div>';
+}
+?>
+
     <form method="POST" class="w-50">
         <input type="hidden" name="item_id" value="<?= htmlspecialchars($id) ?>">
         
