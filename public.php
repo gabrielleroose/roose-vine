@@ -36,6 +36,12 @@ error_reporting(E_ALL);
 
     ?>
 
+    <?php
+    if (isset($_GET['updated']) && $_GET['updated'] == 1) {
+        echo '<div class="alert alert-success">Menu item updated successfully!</div>';
+    }
+    ?>
+
     <table class="dish-table">
         <thead>
             <tr>
