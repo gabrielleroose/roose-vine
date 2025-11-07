@@ -48,17 +48,20 @@
         $price = trim($_POST['price']);
         $description = trim($_POST['description']);
     
-        if (empty($item_name) || empty($price)) {
+        if (empty($item_name) || $price === '') {
             $error = "Item name and price are required.";
-        } elseif (!is_numeric($price) || $price <= 0) {
-            $error = "Please enter a valid positive number for price.";
         } else {
-            $update_stmt = $conn->prepare("UPDATE menu_item SET item_name = ?, price = ?, description = ? WHERE item_id = ?");
-            $update_stmt->bind_param("sdsi", $item_name, $price, $description, $item_id);
-            $update_stmt->execute();
-    
-        header("Location: public.php?updated=1");
-        exit;
+            $price = floatval($price); // cast to float
+            if ($price <= 0) {
+                $error = "Please enter a valid positive number for price.";
+            } else {
+                // Update the database
+                $update_stmt = $conn->prepare("UPDATE menu_item SET item_name = ?, price = ?, description = ? WHERE item_id = ?");
+                $update_stmt->bind_param("sdsi", $item_name, $price, $description, $item_id);
+                $update_stmt->execute();
+        
+                header("Location: public.php?updated=1");
+                exit;
     }
 }
 
