@@ -44,6 +44,7 @@ error_reporting(E_ALL);
                 <th>Dish Category</th>
                 <th>Dish Description</th>
                 <th>Restaurant</th>
+                <th>Action</th>
             </tr>
         </thead>
 
@@ -57,6 +58,7 @@ error_reporting(E_ALL);
                     echo "<td>" . htmlspecialchars($row['category']) . "</td>";
                     echo "<td>" . htmlspecialchars($row['description']) . "</td>";
                     echo "<td>" . htmlspecialchars($row['restaurant']) . "</td>";
+                    echo "<td>" . "<a href='edit.php?id=" . urlencode($row['id']) . "' class='btn btn-primary btn-sm'>Edit</a>" . "</td>";
                     echo "</tr>";
                 }
             } else {
