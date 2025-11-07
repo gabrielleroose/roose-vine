@@ -29,7 +29,7 @@ error_reporting(E_ALL);
 
     $conn = new mysqli($servername, $username, $password, $dbname);
 
-    $sql_table = "Select mi.item_name as name,mi.price,mi.description, mc.category_name as category, r.name as restaurant from menu_item mi
+    $sql_table = "Select mi.item_id, mi.item_name as name,mi.price,mi.description, mc.category_name as category, r.name as restaurant from menu_item mi
     JOIN menu_category mc ON mi.category_id = mc.category_id
     JOIN restaurant r ON mi.restaurant_id = r.restaurant_id";
     $results = $conn->query($sql_table);
@@ -58,7 +58,7 @@ error_reporting(E_ALL);
                     echo "<td>" . htmlspecialchars($row['category']) . "</td>";
                     echo "<td>" . htmlspecialchars($row['description']) . "</td>";
                     echo "<td>" . htmlspecialchars($row['restaurant']) . "</td>";
-                    echo "<td>" . "<a href='edit.php?id=" . urlencode($row['id']) . "' class='btn btn-primary btn-sm'>Edit</a>" . "</td>";
+                    echo "<td>" . "<a href='edit.php?id=" . urlencode($row['item_id']) . "' class='btn btn-primary btn-sm'>Edit</a>" . "</td>";
                     echo "</tr>";
                 }
             } else {
