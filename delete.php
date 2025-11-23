@@ -42,6 +42,16 @@ $error = '';
     $result = $stmt->get_result();
     $item = $result->fetch_assoc();
 
+    if ($_SERVER["REQUEST_METHOD"] === "POST") {
+        $item_id = intval($_POST['item_id']);
+    
+        $delete_stmt = $conn->prepare("DELETE FROM menu_item WHERE item_id = ?");
+        $delete_stmt->bind_param("i", $item_id);
+        $delete_stmt->execute();
+    
+        header("Location: public.php");
+        exit;
+    }
 
 
     ?>
@@ -75,7 +85,7 @@ if (!empty($error)) {
             <p class="form-control-plaintext" ><?= htmlspecialchars($item['description']) ?></p>
         </div>
 
-        <button type="submit" class="btn btn-success">Confirm Delete</button>
+        <button type="submit" class="btn btn-danger mb-3">Confirm Delete</button>
         <a href="public.php" class="btn btn-secondary">Cancel</a>
     </form>
 </div>
