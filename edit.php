@@ -100,7 +100,7 @@ if (!empty($error)) {
             <textarea name="description" class="form-control" rows="3"><?= htmlspecialchars($item['description']) ?></textarea>
         </div>
 
-        <button type="submit" class="btn btn-success">Save Changes</button>
+        <button type="submit" class="btn btn-success mb-3">Save Changes</button>
         <a href="public.php" class="btn btn-secondary">Cancel</a>
     </form>
 </div>

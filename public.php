@@ -70,7 +70,7 @@ error_reporting(E_ALL);
                     echo "</tr>";
                 }
             } else {
-                echo "<tr><td colspan='5'>No menu items found.</td></tr>";
+                echo "<tr><td colspan='7'>No menu items found.</td></tr>";
             }
 
 
