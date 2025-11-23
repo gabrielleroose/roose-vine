@@ -62,17 +62,17 @@ if (!empty($error)) {
         
         <div class="mb-3">
             <label class="form-label">Item Name</label>
-            <p class="form-control-plaintext" value="<?= htmlspecialchars($item['item_name']) ?>" required>
+            <p class="form-control-plaintext" > <?= htmlspecialchars($item['item_name']) ?> </p>
         </div>
 
         <div class="mb-3">
             <label class="form-label">Price</label>
-            <p class="form-control-plaintext" value="<?= htmlspecialchars($item['price']) ?>" required>
+            <p class="form-control-plaintext" > <?= htmlspecialchars($item['price']) ?> </p>
         </div>
 
         <div class="mb-3">
             <label class="form-label">Description</label>
-            <p class="form-control-plaintext" rows="3"><?= htmlspecialchars($item['description']) ?></textarea>
+            <p class="form-control-plaintext" ><?= htmlspecialchars($item['description']) ?></p>
         </div>
 
         <button type="submit" class="btn btn-success">Confirm Delete</button>
