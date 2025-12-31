@@ -117,7 +117,7 @@ span {
   }
 
   .restaurant-details-information {
-    width: 50%;
+    width: 30%;
     padding: 1rem 3rem;
     display: flex;
     flex-direction: column;
@@ -135,7 +135,7 @@ span {
     IMAGES
 */
 img {
-  max-height: 500px;
+  max-height: 650px;
 }
 
 /* 
