@@ -49,14 +49,14 @@
     </div>
 
 
-    <div class="restaurant-details">
+    <div class="restaurant-details-2">
 
         <div class="restaurant-details-image">
         <!-- Image generated from Google Nano Banana Pro December 30, 2025 -->
         <img src="img/RV-2.png" alt="Image of a moody Italian restaurant">
         </div>
 
-        <div class="restaurant-details-information-2">
+        <div class="restaurant-details-information">
                 <p><span class="RV">RV</span>INDIANAPOLIS</p>
 
                 <!-- Description generated from Google Gemini December 30, 2025 -->
