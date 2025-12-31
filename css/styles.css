@@ -152,6 +152,12 @@ img {
 /* 
     LINKS
 */
+
+a{
+    font-size: var(--text-size-sm);
+}
+
+
 a:link{
   color: black;
 }
