@@ -18,10 +18,32 @@
 
 <header>
 
-    <h1>Roose & Vine</h1>
+    <h1>Welcome to Roose & Vine!</h1>
 
 
 </header>
+
+<article>
+
+    <h2><span>Our</span> Restaurants</h2>
+
+    <div class="restaurant-details">
+    <p>RV BLOOMINGTON</p>
+    <p>EXPLORE</p>
+    <p>MENU</p>
+    <p>RESERVATIONS</p>
+    </div>
+
+
+    <div class="restaurant-details">
+    <p>RV INDIANAPOLIS</p>
+    <p>EXPLORE</p>
+    <p>MENU</p>
+    <p>RESERVATIONS</p>
+    </div>
+
+    
+</article>
 
     
 </body>

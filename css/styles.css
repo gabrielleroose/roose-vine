@@ -1,6 +1,11 @@
 header{
     font-style: italic;
     text-align: center;
+    padding-top: 5rem;
+}
+
+span{
+    font-style: italic;
 }
 
 
