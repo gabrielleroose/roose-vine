@@ -14,6 +14,15 @@
 </head>
 <body>
 <?php include 'includes/navbar.php'; ?>
+
+
+<header>
+
+    <h1>Roose & Vine</h1>
+
+
+</header>
+
     
 </body>
 </html>
