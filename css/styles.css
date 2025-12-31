@@ -160,6 +160,10 @@ a{
     font-size: var(--text-size-sm);
 }
 
+.nav-link{
+    font-size: var(--text-size-md);
+}
+
 
 a:link{
   color: black;
