@@ -1,3 +1,63 @@
+/* USE FOR CUSTOM STYLE AND LAYOUT: */
+/* Add or adjust banners for organization */
+/* modern-normalize is taking care of the box-sizing,
+   which is still a standard way to design */
+
+/* * * * * * * * * * * * * * * * * * * * * * * * *
+    UTILITIES 
+* * * * * * * * * * * * * * * * * * * * * * * * */
+/* Screen Reader Only */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+img {
+    display: block;
+    max-inline-size: 100%;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * *
+    TYPOGRAPHY 
+    For larger projects, consider using a type scale:
+    https://baseline.is/tools/type-scale-generator/
+* * * * * * * * * * * * * * * * * * * * * * * * */
+
+:root {
+    --text-size-xs: 0.64rem;
+    --text-size-sm: 0.8rem;
+    --text-size-md: 1rem;
+    --text-size-lg: 1.25rem;
+    --text-size-xl: 1.56rem;
+    --text-size-2xl: 1.95rem;
+    --text-size-3xl: 2.44rem;
+    --text-size-4xl: 3.05rem;
+    --text-size-5xl: 3.81rem;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2{
+    padding-left: 1rem;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * *
+    STRUCTURE
+* * * * * * * * * * * * * * * * * * * * * * * * */
+body{
+    background-color: blanchedalmond;
+}
+
 /* ***************** HOME ******************** */
 
 
@@ -13,6 +73,7 @@ span{
 
 .RV{
     font-weight: 700;
+    font-style: normal;
 }
 
 .restaurant-center{
@@ -20,14 +81,10 @@ span{
     padding-bottom: 2rem;
 }
 
-
-img{
-    max-height: 500px;
-}
-
 .restaurant-details{
     display: flex;
     flex-direction: column;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .restaurant-details-information{
@@ -44,6 +101,39 @@ img{
 
 }
 
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * *
+    COMPONENTS
+* * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* 
+    IMAGES
+*/
+img{
+    max-height: 500px;
+}
+
+
+/* 
+    LINKS
+*/
+a:link{
+    color: black;
+}
+
+a:hover{
+    color: grey;
+}
+
+/* 
+    BUTTONS
+*/
+
+/* 
+    TABLES
+*/
 
 .dish-table{
     width: 100%;
@@ -68,18 +158,19 @@ td{
     padding-left: 1rem;
 }
 
-h1, h2, h3, h4, h5, h6{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+
+/* 
+    LISTS
+*/
+
+li{
+    list-style-type: none;
 }
 
-h2{
-    padding-left: 1rem;
-}
 
-body{
-    background-color: blanchedalmond;
-}
-
+/* 
+    FORMS
+*/
 
 form {
     background-color: #444;
@@ -145,3 +236,39 @@ button[type="submit"]:hover {
 .form-control-plaintext{
     color: white;
 }
+
+
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * *
+    PAGE SPECIFIC
+* * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * *
+    MEDIA QUERIES 
+* * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* X-Small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (width >=576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (width >=768px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (width >=992px) {}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (width >=1200px) {}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (width >=1400px) {}
