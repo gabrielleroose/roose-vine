@@ -49,7 +49,7 @@
     </div>
 
 
-    <div class="restaurant-details-2">
+    <div class="restaurant-details restaurant-details-2">
 
         <div class="restaurant-details-image">
         <!-- Image generated from Google Nano Banana Pro December 30, 2025 -->
