@@ -120,6 +120,10 @@ span {
     justify-content: center;
     align-items: center;
   }
+
+  .restaurant-details-information-2{
+    flex-direction: row-reverse;
+  }
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * *
