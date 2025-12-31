@@ -81,10 +81,10 @@ error_reporting(E_ALL);
 
     <h2>Food Gallery</h2>
     <div class="food-gallery">
-        <img src="img/enchiladas.jpg" alt="image of enchiladas on a plate">
-        <img src="img/cheeseburger.jpg" alt="image of a cheeseburger and fries on a plate">
-        <img src="img/chicken-sandwhich.jpg" alt="close up image of a chicken sandwich">
-        <img src="img/pasta-salad.jpg" alt="bowl of pasta salad">
+        <img src="img/bruchetta.jpg" alt="image Italian bruchetta">
+        <img src="img/caprese.jpeg" alt="image of caprese on a plate">
+        <img src="img/garlic-bread.jpg" alt="close up image of garlic bread in a bowl">
+        <img src="img/chicken-parm.jpg" alt="image of chicken parmesean on a plate">
     </div>
 
 </body>
