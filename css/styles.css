@@ -81,7 +81,10 @@ span {
 .RV {
   font-weight: 700;
   /* font-style: normal; */
-  font-size: var(--text-size-2xl);
+}
+
+.RV-1{
+    font-size: var(--text-size-xl);
 }
 
 .restaurant-center {
