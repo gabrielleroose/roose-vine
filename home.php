@@ -28,9 +28,9 @@
     <h2 class="restaurant-center"><span>Our</span> RESTAURANTS</h2>
 
         <div class="restaurant-details">
-            
+
             <div class="restaurant-details-image">
-            <img src="img/RV-2.png" alt="Image of a moody Italian restaurant">
+                <img src="img/RV-2.png" alt="Image of a moody Italian restaurant">
             </div>
 
             <div class="restaurant-details-information">

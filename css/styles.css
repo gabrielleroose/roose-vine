@@ -10,17 +10,28 @@ span{
 
 .restaurant-center{
     text-align: center;
+    padding-bottom: 2rem;
 }
 
-.restaurant-details{
-    display: flex;
-    justify-content: space-between;
-}
 
 img{
     max-height: 500px;
 }
 
+.restaurant-details{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (width >=768px) {
+
+    .restaurant-details{
+        display: flex;
+        flex-direction: row;
+    }
+
+}
 
 
 .dish-table{
