@@ -39,11 +39,11 @@
 
                 <!-- Description generated from Google Gemini December 30, 2025 -->
                 <p>The Ristorante is a darkly romantic indoor-outdoor sanctuary that blurs the lines between a Tuscan villa and a modern garden. Dine beneath the warm glow of antique iron lanterns amid heritage cypress trees, crackling stone fireplaces and cascading fountains while enjoying a menu of enduring Italian classics and signature salads.</p>
-                <ul>
-                    <li><a href="#">EXPLORE</a></li>
-                    <li><a href="#">MENU</a></li>
-                    <li><a href="#">RESERVATIONS</a></li>
-                </ul>
+
+                    <p><a href="#">EXPLORE</a></p>
+                    <p><a href="#">MENU</a></p>
+                    <p><a href="#">RESERVATIONS</a></p>
+               
             </div>
 
     </div>
@@ -61,11 +61,11 @@
 
                 <!-- Description generated from Google Gemini December 30, 2025 -->
                 <p>The Ristorante is a darkly romantic indoor-outdoor sanctuary that blurs the lines between a Tuscan villa and a modern garden. Dine beneath the warm glow of antique iron lanterns amid heritage cypress trees, crackling stone fireplaces and cascading fountains while enjoying a menu of enduring Italian classics and signature salads.</p>
-                <ul>
-                    <li><a href="#">EXPLORE</a></li>
-                    <li><a href="#">MENU</a></li>
-                    <li><a href="#">RESERVATIONS</a></li>
-                </ul>
+
+                    <p><a href="#">EXPLORE</a></p>
+                    <p><a href="#">MENU</a></p>
+                    <p><a href="#">RESERVATIONS</a></p>
+                
                 
             </div>
 
