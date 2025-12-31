@@ -38,7 +38,7 @@
                 <p><span class="RV">RV</span>BLOOMINGTON</p>
 
                 <!-- Description generated from Google Gemini December 30, 2025 -->
-                <p>The Ristorante is a darkly romantic indoor-outdoor sanctuary that blurs the lines between a Tuscan villa and a modern garden. Dine beneath the warm glow of antique iron lanterns amid heritage cypress trees, crackling stone fireplaces and cascading fountains while enjoying a menu of enduring Italian classics and signature salads.</p>
+                <p class="restaurant-details-information-description">The Ristorante is a darkly romantic indoor-outdoor sanctuary that blurs the lines between a Tuscan villa and a modern garden. Dine beneath the warm glow of antique iron lanterns amid heritage cypress trees, crackling stone fireplaces and cascading fountains while enjoying a menu of enduring Italian classics and signature salads.</p>
 
                     <p><a href="#">EXPLORE</a></p>
                     <p><a href="#">MENU</a></p>
@@ -60,7 +60,7 @@
                 <p><span class="RV">RV</span>INDIANAPOLIS</p>
 
                 <!-- Description generated from Google Gemini December 30, 2025 -->
-                <p>The Ristorante is a darkly romantic indoor-outdoor sanctuary that blurs the lines between a Tuscan villa and a modern garden. Dine beneath the warm glow of antique iron lanterns amid heritage cypress trees, crackling stone fireplaces and cascading fountains while enjoying a menu of enduring Italian classics and signature salads.</p>
+                <p class="restaurant-details-information-description">The Ristorante is a darkly romantic indoor-outdoor sanctuary that blurs the lines between a Tuscan villa and a modern garden. Dine beneath the warm glow of antique iron lanterns amid heritage cypress trees, crackling stone fireplaces and cascading fountains while enjoying a menu of enduring Italian classics and signature salads.</p>
 
                     <p><a href="#">EXPLORE</a></p>
                     <p><a href="#">MENU</a></p>

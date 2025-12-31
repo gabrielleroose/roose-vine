@@ -100,6 +100,11 @@ span {
   text-align: center;
 }
 
+.restaurant-details-information-description{
+    text-align: left;
+    padding: 0rem 1rem;
+}
+
 /* Medium devices (tablets, 768px and up) */
 @media (width >=768px) {
   .restaurant-details {
