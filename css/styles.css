@@ -1,3 +1,6 @@
+/* ***************** HOME ******************** */
+
+
 header{
     font-style: italic;
     text-align: center;
@@ -6,6 +9,10 @@ header{
 
 span{
     font-style: italic;
+}
+
+.RV{
+    font-weight: 700;
 }
 
 .restaurant-center{
@@ -21,6 +28,10 @@ img{
 .restaurant-details{
     display: flex;
     flex-direction: column;
+}
+
+.restaurant-details-information{
+    text-align: center;
 }
 
 /* Medium devices (tablets, 768px and up) */
