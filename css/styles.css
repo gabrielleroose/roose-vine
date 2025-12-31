@@ -81,7 +81,7 @@ span {
 .RV {
   font-weight: 700;
   /* font-style: normal; */
-  font-size: var(--text-size-lg);
+  font-size: var(--text-size-xl);
 }
 
 .restaurant-center {
@@ -142,12 +142,24 @@ img {
 /* 
     LINKS
 */
-a:link {
+a:link{
   color: black;
 }
 
-a:hover {
+a:hover{
   color: grey;
+}
+
+a:active{
+    color: black;
+}
+
+a:visited{
+    color: black;
+}
+
+a:focus{
+    color: grey;
 }
 
 /* 
