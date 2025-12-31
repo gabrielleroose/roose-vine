@@ -105,8 +105,7 @@ span {
   .restaurant-details {
     display: flex;
     flex-direction: row;
-    padding-bottom: 5rem;
-    padding: 0rem 3rem;
+    padding: 0rem 3rem 5rem 3rem;
   }
 
   .restaurant-details.restaurant-details-2{
@@ -122,7 +121,6 @@ span {
     padding: 1rem 3rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: left;
   }
