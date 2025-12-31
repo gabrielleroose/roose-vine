@@ -8,19 +8,19 @@
 * * * * * * * * * * * * * * * * * * * * * * * * */
 /* Screen Reader Only */
 .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 img {
-    display: block;
-    max-inline-size: 100%;
+  display: block;
+  max-inline-size: 100%;
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * *
@@ -30,82 +30,92 @@ img {
 * * * * * * * * * * * * * * * * * * * * * * * * */
 
 :root {
-    --text-size-xs: 0.64rem;
-    --text-size-sm: 0.8rem;
-    --text-size-md: 1rem;
-    --text-size-lg: 1.25rem;
-    --text-size-xl: 1.56rem;
-    --text-size-2xl: 1.95rem;
-    --text-size-3xl: 2.44rem;
-    --text-size-4xl: 3.05rem;
-    --text-size-5xl: 3.81rem;
+  --text-size-xs: 0.64rem;
+  --text-size-sm: 0.8rem;
+  --text-size-md: 1rem;
+  --text-size-lg: 1.25rem;
+  --text-size-xl: 1.56rem;
+  --text-size-2xl: 1.95rem;
+  --text-size-3xl: 2.44rem;
+  --text-size-4xl: 3.05rem;
+  --text-size-5xl: 3.81rem;
 }
 
-
-h1, h2, h3, h4, h5, h6{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-h2{
-    padding-left: 1rem;
+h2 {
+  padding-left: 1rem;
 }
 
+p {
+  font-size: var(--text-size-md);
+}
 
 /* * * * * * * * * * * * * * * * * * * * * * * * *
     STRUCTURE
 * * * * * * * * * * * * * * * * * * * * * * * * */
-body{
-    background-color: blanchedalmond;
+body {
+  background-color: blanchedalmond;
 }
 
 /* ***************** HOME ******************** */
 
-
-header{
-    font-style: italic;
-    text-align: center;
-    padding-top: 5rem;
-    font-size: var(--text-size-2xl);
+header {
+  font-style: italic;
+  text-align: center;
+  padding-top: 5rem;
+  font-size: var(--text-size-2xl);
 }
 
-span{
-    font-style: italic;
+span {
+  font-style: italic;
 }
 
-.RV{
-    font-weight: 700;
-    /* font-style: normal; */
-    font-size: var(--text-size-lg);
+.RV {
+  font-weight: 700;
+  /* font-style: normal; */
+  font-size: var(--text-size-lg);
 }
 
-.restaurant-center{
-    text-align: center;
-    padding-bottom: 2rem;
-    font-size: var(--text-size-xl);
+.restaurant-center {
+  text-align: center;
+  padding-bottom: 2rem;
+  font-size: var(--text-size-xl);
 }
 
-.restaurant-details{
-    display: flex;
-    flex-direction: column;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.restaurant-details {
+  display: flex;
+  flex-direction: column;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.restaurant-details-information{
-    text-align: center;
+.restaurant-details-information {
+  text-align: center;
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (width >=768px) {
+  .restaurant-details {
+    display: flex;
+    flex-direction: row;
+  }
 
-    .restaurant-details{
-        display: flex;
-        flex-direction: row;
-    }
+  .restaurant-details-image {
+    width: 50%;
+  }
 
+  .restaurant-details-information {
+    width: 50%;
+    padding: 1rem;
+  }
 }
-
-
-
 
 /* * * * * * * * * * * * * * * * * * * * * * * * *
     COMPONENTS
@@ -114,20 +124,19 @@ span{
 /* 
     IMAGES
 */
-img{
-    max-height: 500px;
+img {
+  max-height: 500px;
 }
-
 
 /* 
     LINKS
 */
-a:link{
-    color: black;
+a:link {
+  color: black;
 }
 
-a:hover{
-    color: grey;
+a:hover {
+  color: grey;
 }
 
 /* 
@@ -138,121 +147,109 @@ a:hover{
     TABLES
 */
 
-.dish-table{
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 30px;
+.dish-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
 }
 
 th td {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
 }
 
-th { 
-    background: #444;
-    color: white;
-    text-align: left;
-    padding-left: 1rem;
+th {
+  background: #444;
+  color: white;
+  text-align: left;
+  padding-left: 1rem;
 }
 
-td{
-    padding-left: 1rem;
+td {
+  padding-left: 1rem;
 }
-
 
 /* 
     LISTS
 */
 
-li{
-    list-style-type: none;
+li {
+  list-style-type: none;
 }
-
 
 /* 
     FORMS
 */
 
 form {
-    background-color: #444;
-    color: #f5deb3; 
-    width: 450px;
-    margin: 0 auto;
-    padding: 25px 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #444;
+  color: #f5deb3;
+  width: 450px;
+  margin: 0 auto;
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 label {
-    display: block;
-    font-weight: bold;
-    margin-top: 15px;
+  display: block;
+  font-weight: bold;
+  margin-top: 15px;
 }
 
 input[type="text"],
 input[type="number"],
 textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 8px;
-    border-radius: 6px;
-    border: none;
-    outline: none;
-    background-color: #f8f8f8;
+  width: 100%;
+  padding: 8px;
+  margin-top: 8px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  background-color: #f8f8f8;
 }
 
 .checkbox-group {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .checkbox-group label {
-    font-weight: normal;
+  font-weight: normal;
 }
 
 button[type="submit"] {
-    background-color: #f5deb3;
-    color: #444;
-    border: none;
-    font-weight: bold;
-    border-radius: 8px;
-    padding: 10px 15px;
-    margin-top: 20px;
-    width: 100%;
-    transition: all 0.3s ease;
+  background-color: #f5deb3;
+  color: #444;
+  border: none;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin-top: 20px;
+  width: 100%;
+  transition: all 0.3s ease;
 }
 
 button[type="submit"]:hover {
-    background-color: #e8cfa6;
-    transform: translateY(-2px);
-} 
+  background-color: #e8cfa6;
+  transform: translateY(-2px);
+}
 
 .form_heading {
-    text-align: center;
-    color: #444;
-    font-weight: bold;
-    margin-top: 30px;
-    margin-bottom: 30px;
+  text-align: center;
+  color: #444;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-.form-control-plaintext{
-    color: white;
+.form-control-plaintext {
+  color: white;
 }
-
-
-
-
-
 
 /* * * * * * * * * * * * * * * * * * * * * * * * *
     PAGE SPECIFIC
 * * * * * * * * * * * * * * * * * * * * * * * * */
-
-
-
-
-
 
 /* * * * * * * * * * * * * * * * * * * * * * * * *
     MEDIA QUERIES 
@@ -262,16 +259,21 @@ button[type="submit"]:hover {
 /* No media query for `xs` since this is the default */
 
 /* Small devices (landscape phones, 576px and up) */
-@media (width >=576px) {}
+@media (width >=576px) {
+}
 
 /* Medium devices (tablets, 768px and up) */
-@media (width >=768px) {}
+@media (width >=768px) {
+}
 
 /* Large devices (desktops, 992px and up) */
-@media (width >=992px) {}
+@media (width >=992px) {
+}
 
 /* X-Large devices (large desktops, 1200px and up) */
-@media (width >=1200px) {}
+@media (width >=1200px) {
+}
 
 /* XX-Large devices (larger desktops, 1400px and up) */
-@media (width >=1400px) {}
+@media (width >=1400px) {
+}
