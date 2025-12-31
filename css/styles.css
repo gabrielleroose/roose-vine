@@ -108,6 +108,10 @@ span {
     padding-bottom: 5rem;
   }
 
+  .restaurant-details.restaurant-details-2{
+    flex-direction: row-reverse;
+  }
+
   .restaurant-details-image {
     width: 50%;
   }
@@ -121,9 +125,6 @@ span {
     align-items: center;
   }
 
-  .restaurant-details-2{
-    flex-direction: row-reverse;
-  }
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * *
