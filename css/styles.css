@@ -12,6 +12,15 @@ span{
     text-align: center;
 }
 
+.restaurant-details{
+    display: flex;
+    justify-content: space-between;
+}
+
+img{
+    max-height: 500px;
+}
+
 
 
 .dish-table{

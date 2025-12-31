@@ -27,21 +27,35 @@
 
     <h2 class="restaurant-center"><span>Our</span> RESTAURANTS</h2>
 
-    <div class="restaurant-details">
-    <img src="img/RV-2.png" alt="Image of a moody Italian restaurant">
-    <p>RV BLOOMINGTON</p>
-    <p>EXPLORE</p>
-    <p>MENU</p>
-    <p>RESERVATIONS</p>
+        <div class="restaurant-details">
+            
+            <div class="restaurant-details-image">
+            <img src="img/RV-2.png" alt="Image of a moody Italian restaurant">
+            </div>
+
+            <div class="restaurant-details-information">
+                <p>RV BLOOMINGTON</p>
+                <p>EXPLORE</p>
+                <p>MENU</p>
+                <p>RESERVATIONS</p>
+            </div>
+
     </div>
 
 
     <div class="restaurant-details">
-    <img src="img/RV-2.png" alt="Image of a moody Italian restaurant">
-    <p>RV INDIANAPOLIS</p>
-    <p>EXPLORE</p>
-    <p>MENU</p>
-    <p>RESERVATIONS</p>
+
+        <div class="restaurant-details-image">
+        <img src="img/RV-2.png" alt="Image of a moody Italian restaurant">
+        </div>
+
+        <div class="restaurant-details-information">
+                <p>RV BLOOMINGTON</p>
+                <p>EXPLORE</p>
+                <p>MENU</p>
+                <p>RESERVATIONS</p>
+            </div>
+
     </div>
 
 
