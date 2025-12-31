@@ -131,6 +131,10 @@ span {
     text-align: left;
   }
 
+  .restaurant-details-information-description{
+    padding: 0rem;
+}
+
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * *
