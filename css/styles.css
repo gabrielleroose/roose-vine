@@ -290,6 +290,18 @@ button[type="submit"]:hover {
     PAGE SPECIFIC
 * * * * * * * * * * * * * * * * * * * * * * * * */
 
+
+/* ***************** PUBLIC ******************** */
+
+.food-title{
+    text-align: center;
+    font-style: italic;
+    padding: 1rem 0rem 2rem;
+}
+
+
+
+
 /* * * * * * * * * * * * * * * * * * * * * * * * *
     MEDIA QUERIES 
 * * * * * * * * * * * * * * * * * * * * * * * * */

@@ -79,7 +79,7 @@ error_reporting(E_ALL);
         </tbody>
     </table>
 
-    <h2>Food Gallery</h2>
+    <h2 class="food-title">Food Gallery</h2>
     <div class="food-gallery">
         <img src="img/bruchetta.png" alt="image Italian bruchetta">
         <img src="img/garlic-bread.png" alt="close up image of garlic bread in a bowl">
