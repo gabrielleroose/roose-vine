@@ -1,5 +1,5 @@
 {
   "deploy": {
-    "startCommand": "php -S 0.0.0.0:$PORT -t /app /app/home.php"
+    "startCommand": "php -S 0.0.0.0:$PORT -t /app /app/router.php"
   }
 }
