@@ -19,10 +19,10 @@
     <?php include 'includes/navbar.php'; ?>
 
     <?php
-    $servername = "db.luddy.indiana.edu";
-    $username = "i494f25_groose";
-    $password = "prose3351skite";
-    $dbname = "i494f25_groose";
+    $servername = getenv("MYSQLHOST");
+    $username = getenv("MYSQLUSER");
+    $password = getenv("MYSQLPASSWORD");
+    $dbname = getenv("MYSQLDATABASE") ?: getenv("MYSQL_DATABASE");
 
     $conn = new mysqli($servername, $username, $password, $dbname);
     $attributes_query = "SELECT * FROM dish_attributes";
